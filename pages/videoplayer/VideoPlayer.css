@@ -1,0 +1,35 @@
+.video-player-main .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh; /* Make the container take the full height of the viewport */
+  width: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 392px; /* Sidebar width */
+  height: 100%;
+  background-color: #34353d;
+  padding: 20px;
+  margin-left: -258px;
+}
+
+.video-player {
+  margin-left: 300px; /* Adjust margin to accommodate the sidebar width */
+  width: calc(100% - 250px); /* Adjust width to fill the remaining space */
+  height: calc(100vh - 40px); /* Subtracting padding from the course description */
+  background-color: #23242a;
+  padding: 20px;
+}
+
+.course-description {
+  margin-left: 250px; /* Adjust margin to accommodate the sidebar width */
+  background-color: #23242a;
+  padding: 20px;
+  flex: 0 0 auto; /* Course description at the bottom */
+}
+
